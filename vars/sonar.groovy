@@ -3,7 +3,7 @@ def call() {
     withSonarQubeEnv(credentialsId: 'sonar', installationName: 'sonarqube') {                                     
         sh "mvn clean verify sonar:sonar \
         -Dsonar.host.url=$sonar_url \
-        -Dsonar.projectName=$sonar_name"
+        -Dsonar.projectName=ss"
     }
 }
 
