@@ -1,4 +1,4 @@
-def call() {
+def mvnbuild() {
     if (ENV == 'mule') {
         sh 'mvn clean package'
         archiveJar()
