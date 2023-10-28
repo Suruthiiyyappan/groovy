@@ -1,9 +1,7 @@
 def call() {
-    echo "Sonarqube Integration"
-    withSonarQubeEnv(credentialsId: 'sonar', installationName: 'sonarqube') {                                     
-        sh "mvn clean verify sonar:sonar \
-        -Dsonar.host.url=$sonar_url \
-        -Dsonar.projectName=ss"
+    sh "mvn clean verify sonar:sonar \
+    -Dsonar.host.url=$sonar_url \
+    -Dsonar.projectName=ss"
     }
 }
 
