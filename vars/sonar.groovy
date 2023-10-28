@@ -3,7 +3,7 @@ def call() {
     -Dsonar.host.url=$sonar_url \
     -Dsonar.projectName=ss"
     }
-}
+
 
 
 // // Define a function for SonarQube integration
